@@ -61,4 +61,4 @@ while true
 end
 
 print("You got " * string(rightAnswers) * " right answer(s)\n")
-print("Right result: " * string(result))    
+print("Right result: " * string(result) * "\n")    
