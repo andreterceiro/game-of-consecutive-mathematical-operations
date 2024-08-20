@@ -1,7 +1,8 @@
 using Random
 
 """
-Returns a number between 0 (inclusive) and 999 (inclusive)
+Returns a number between 0 (inclusive) and the limit can be 10, 100 or 1000, 
+depending the user selection of the level
 
 @return Int
 """
@@ -9,11 +10,12 @@ function getRandomNumber(divisor)
     return abs(rand(Int) % divisor)
 end
 
-print("You will need to insert the result of the sum\n")
+print("You will need to insert the result of the operations\n")
 print("========\n\n")
 
 print("In the first step, insert 1 to level easy, 2 to normal and 3 to hard: ")
 userLevelSelection = 0
+
 while userLevelSelection < 1 || userLevelSelection > 3
     global userLevelSelection = parse(Int, readline())
 end
@@ -27,15 +29,19 @@ end
 
 previousNumbers = [getRandomNumber(divisor), getRandomNumber(divisor), getRandomNumber(divisor)]
 global rightAnswers = 0
+result = 0
 
 while true
     newNumber = getRandomNumber(divisor)
-    sum = 0
+    results = ""
 
     for i in 1:length(previousNumbers)
         number = previousNumbers[i]
+        
         print(number)
-        sum += number
+
+        global result += number
+
         if i < length(previousNumbers)
             print(" + ")
         else 
@@ -43,10 +49,11 @@ while true
         end
     end    
 
-    userSum = parse(Int64, readline())
+    userResult = parse(Float64, readline())
 
-    if userSum == sum
+    if userResult == result
         global rightAnswers += 1
+        global result = 0
         push!(previousNumbers, getRandomNumber(divisor))
     else
         break
@@ -54,3 +61,4 @@ while true
 end
 
 print("You got " * string(rightAnswers) * " right answer(s)\n")
+print("Right result: " * string(result))    
