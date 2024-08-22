@@ -9,7 +9,7 @@ This project conforms to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-- [Jogo operacoes matemáticas em cadeia](https://github.com/andreterceiro/jogo-operacoes-matematicas-em-cadeia)
+- [Game of consecutive mathematical operations](https://github.com/andreterceiro/game-of-consecutive-mathematical-operations)
    Filtering non integer inputs of user and another small adjusts.
 
 
@@ -17,5 +17,5 @@ This project conforms to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-- [Jogo operacoes matemáticas em cadeia](https://github.com/andreterceiro/jogo-operacoes-matematicas-em-cadeia)
+- [Game of consecutive mathematical operations](https://github.com/andreterceiro/game-of-consecutive-mathematical-operations)
    Initial version only with sums, but allowing the selection of difficult level.
