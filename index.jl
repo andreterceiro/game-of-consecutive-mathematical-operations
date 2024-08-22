@@ -16,8 +16,13 @@ print("========\n\n")
 print("In the first step, insert 1 to level easy, 2 to normal and 3 to hard: ")
 userLevelSelection = 0
 
-while userLevelSelection < 1 || userLevelSelection > 3
-    global userLevelSelection = parse(Int, readline())
+try
+    while userLevelSelection < 1 || userLevelSelection > 3
+        global userLevelSelection = parse(Int, readline())
+    end
+catch
+    print("\nNão consegui coneverter o valor que você digitou para um número. Vou abortar o script.\n\n")
+    exit()
 end
 
 divisor = 1000
@@ -28,7 +33,8 @@ elseif userLevelSelection == 2
 end
 
 previousNumbers = [getRandomNumber(divisor), getRandomNumber(divisor), getRandomNumber(divisor)]
-global rightAnswers = 0
+rightAnswers = 0
+userResult = 0
 result = 0
 
 while true
@@ -49,9 +55,14 @@ while true
         end
     end    
 
-    userResult = parse(Float64, readline())
+    error = false
+    try
+        global userResult = parse(Float64, readline())
+    catch
+        error = true
+    end
 
-    if userResult == result
+    if userResult == result && error == false
         global rightAnswers += 1
         global result = 0
         push!(previousNumbers, getRandomNumber(divisor))
@@ -61,4 +72,4 @@ while true
 end
 
 print("You got " * string(rightAnswers) * " right answer(s)\n")
-print("Right result: " * string(result) * "\n")    
+print("Right result: " * string(result) * "\n")
