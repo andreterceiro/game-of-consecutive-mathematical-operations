@@ -1,8 +1,8 @@
 # Changelog
 
-Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
- 
-Este projeto está de acordo com [Versão Semântica](http://semver.org/).
+All notable changes to this project will be documented in this file.
+
+This project conforms to [Semantic Versioning](http://semver.org/).
 
 
 ## [0.1.0] - 2024-08-20
@@ -10,4 +10,4 @@ Este projeto está de acordo com [Versão Semântica](http://semver.org/).
 ### Added
 
 - [Jogo operacoes matemáticas em cadeia](https://github.com/andreterceiro/jogo-operacoes-matematicas-em-cadeia)
-   Versão inicial só com somas, mas já com ajuste de dificuldade 
+   Initial version only with sums, but allowing the selection of difficult level.
