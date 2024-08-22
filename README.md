@@ -1,5 +1,6 @@
 # Initial ideas
 
+
 ## Math operations
 
 The user needs to evaluate a result of a expression with random numbers. After each right response, we increase the number of numbers. 
@@ -28,5 +29,11 @@ You got 2 right answer(s)
 Right result: 165
 ```
 
+
+# Another resources
+
 [Kanban board](https://trello.com/b/gEzHauLi/geral)
 
+[Demo](https://youtu.be/masqBbglKNY)
+
+[Installation of Julia](https://julialang.org/downloads/)
