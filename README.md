@@ -30,7 +30,18 @@ Right result: 165
 ```
 
 
-# Another resources
+## Julia version
+
+You can check the Julia version after installing through this command
+
+```
+julia -v
+```
+
+I used the version `1.10.4`.
+
+
+## Another resources
 
 [Kanban board](https://trello.com/b/gEzHauLi/geral)
 
