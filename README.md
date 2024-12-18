@@ -5,7 +5,7 @@
 
 The user needs to evaluate a result of a expression with random numbers. After each right response, we increase the number of numbers. 
 
-Initially we will only use sums. In future, we will insert subtractions. And multiplications and divisions. We do not know the better way to insert, see some problems:
+Initially we will only use sums. In future, we will insert subtractions. And multiplications and divisions. I do not know the better way to insert, see some problems:
 
 - 1 - 3 * 5 + 7: matematically, we need first to multply -3 and 5 (= -15), sum 1 (-14) and sum 7 (-7). The multiplication comes first. If we apply the calculations in sequence, we will have 1 - 3 = -2 ... -2 * 5 = -10 ... -10 + 7 = -3 => wrong answers
 - We need only to multiply if small numbers. See with 3 digits: 999 * 765 => hard
