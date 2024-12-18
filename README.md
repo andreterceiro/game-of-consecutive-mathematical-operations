@@ -8,7 +8,7 @@ The user needs to evaluate a result of a expression with random numbers. After e
 Initially we will only use sums. In future, we will insert subtractions. And multiplications and divisions. I do not know the better way to insert, see some problems:
 
 - 1 - 3 * 5 + 7: matematically, we need first to multply -3 and 5 (= -15), sum 1 (-14) and sum 7 (-7). The multiplication comes first. If we apply the calculations in sequence, we will have 1 - 3 = -2 ... -2 * 5 = -10 ... -10 + 7 = -3 => wrong answers
-- We need only to multiply if small numbers. See with 3 digits: 999 * 765 => hard
+- We need only to multiply using small numbers. See with 3 digits: 999 * 765 => hard
 - In divisions maybe the solution is difficult if the divisions were in sequence and non exacts (integer result). Example: 7 / 4 / 9 => hard 
 
 Example (random numbers):
